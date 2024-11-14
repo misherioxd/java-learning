@@ -1,5 +1,7 @@
 package lv.acodemy;
 
+import java.sql.SQLOutput;
+
 public class Variables {
     public static void main(String[] args) {
 
@@ -108,7 +110,7 @@ public class Variables {
         //Increment++
         //++preIncrement
         //Decrement --
-        //++Decrement
+        //--Decrement
 
         number++;
         System.out.println(number);
@@ -121,6 +123,30 @@ public class Variables {
         int preIncrement = ++counter; //preIncrement = 13; counter = 13;
         System.out.println(postIncrement);
         System.out.println(preIncrement);
+
+        String name = "Nikita";
+        String lastName = "Muzikants";
+        System.out.println(name);
+        System.out.println(lastName);
+
+        String fullName = name + " " + lastName;
+        System.out.println(fullName);
+
+        // %s - for String
+        // %a - for numbers
+        // %b - boolean
+
+        System.out.println(String.format("My name is: %s, My surname is: %s", name, lastName));
+        System.out.printf("My name is: %s, My surname is: %s\n", name, lastName);
+        System.out.printf("My name is: %s, My surname is: %s%n", name, lastName);
+
+        var myCurrentAge = 23;
+        var text = "Hello World";
+
+        String myVar;
+        myVar = "Hello World";
+
+
    }
 }
 
